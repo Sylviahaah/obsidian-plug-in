@@ -1,9 +1,12 @@
 # obsidian-plug-in
-# Obsidian 卡片样式插件
+# Obsidian 嵌入笔记显示样式设置
 
 ## 功能概述
 
 这个 CSS 片段为 Obsidian 提供了美观的卡片式嵌入样式，支持常规内容和图片内容的独立样式配置，通过 Style Settings 插件提供丰富的自定义选项。
+<img width="736" height="33" alt="图片" src="https://github.com/user-attachments/assets/ba4bfd7f-6425-4863-866a-fde75b2f8bba" />
+<img width="808" height="483" alt="图片" src="https://github.com/user-attachments/assets/6537476e-074c-43b6-ba66-244fb1624dbd" />
+
 
 ## 功能特性
 
@@ -58,7 +61,7 @@
 
 2. **颜色搭配**：
    - 可以使用主题默认颜色，也可自定义
-     自定义需要点击“save”方可保存生效，否则自动舍弃
+     【自定义颜色设置后需要点击“save”方可保存生效，否则自动舍弃】
      <img width="1127" height="816" alt="图片" src="https://github.com/user-attachments/assets/3e495314-86f0-404d-8976-250ed7eb7ad3" />
 
    - 悬停颜色建议比正常状态更亮/更醒目
