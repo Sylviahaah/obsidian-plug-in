@@ -1,0 +1,104 @@
+/* === README ===
+	 Author: Sylviahaah / github: https://github.com/Sylviahaah
+*/
+/* @settings
+name: 卡片样式设置
+id: custom-card-styles
+description: 自定义嵌入内容的卡片样式
+settings:
+  # ========== 常规内容卡片 ==========
+  -
+    id: regular-heading
+    title: "常规内容卡片"
+    type: heading
+    level: 1
+    
+  -
+    id: enable-regular
+    title: "启用常规卡片"
+    type: class-toggle
+    default: true
+    
+  -
+    id: regular-height
+    title: "卡片高度"
+    description: "输入高度数值（单位：px）"
+    type: variable-text
+    default: 240px
+    
+  -
+    id: regular-border-color
+    title: "边框颜色"
+    type: variable-themed-color
+    default-light: "#007acc"
+    default-dark: "#0a84ff"
+    format: hex
+    
+  -
+    id: regular-bg-color
+    title: "背景颜色"
+    type: variable-themed-color
+    default-light: "#f5f5f5"
+    default-dark: "#2a2a2a"
+    format: hex
+    
+  -
+    id: regular-text-color
+    title: "文字颜色"
+    type: variable-themed-color
+    default-light: "#666666"
+    default-dark: "#aaaaaa"
+    format: hex
+    
+  -
+    id: regular-hover-border-color
+    title: "悬停边框颜色"
+    type: variable-themed-color
+    default-light: "#0099ff"
+    default-dark: "#1a9fff"
+    format: hex
+
+  # ========== 图片卡片 ==========  
+  -
+    id: image-heading
+    title: "图片卡片"
+    type: heading
+    level: 1
+    
+  -
+    id: enable-image
+    title: "启用图片卡片"
+    type: class-toggle
+    default: false
+    
+  -
+    id: image-height
+    title: "卡片高度"
+    description: "输入高度数值（单位：px）"
+    type: variable-text
+    default: 400px
+    
+  -
+    id: image-border-color
+    title: "边框颜色"
+    type: variable-themed-color
+    default-light: "#007acc"
+    default-dark: "#0a84ff"
+    format: hex
+    
+  -
+    id: image-bg-color
+    title: "背景颜色"
+    type: variable-themed-color
+    default-light: "#f5f5f5"
+    default-dark: "#2a2a2a"
+    format: hex
+    
+  -
+    id: image-hover-border-color
+    title: "悬停边框颜色"
+    type: variable-themed-color
+    default-light: "#0099ff"
+    default-dark: "#1a9fff"
+    format: hex
+*/

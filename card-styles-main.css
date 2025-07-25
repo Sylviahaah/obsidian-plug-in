@@ -1,0 +1,96 @@
+/* === README ===
+	 Author: Sylviahaah / github: https://github.com/Sylviahaah
+*/
+/* ========== 基础卡片样式 ========== */
+
+/* ===== 常规内容卡片 ===== */
+body.enable-regular {
+  .markdown-source-view.mod-cm6 .internal-embed:not(.image-embed),
+  .markdown-source-view .CodeMirror .internal-embed:not(.image-embed),
+  .markdown-preview-view .internal-embed:not(.image-embed) {
+    /* 尺寸设置 - 使用calc处理文本输入的高度值 */
+    display: block;
+    max-height: calc(var(--regular-height, 240) * 1px);
+    overflow-y: auto;
+    margin: 1em 0;
+    padding: 10px 12px 10px 18px;
+    
+    /* 颜色设置 */
+    border-left: 4px solid var(--regular-border-color);
+    background: var(--regular-bg-color);
+    color: var(--regular-text-color) !important;
+    
+    /* 视觉效果 */
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    font-size: 0.9em;
+    font-family: var(--font-interface) !important;
+    transition: all 0.2s ease;
+    
+    /* 悬停效果 */
+    &:hover {
+      border-left-color: var(--regular-hover-border-color);
+      box-shadow: 0 4px 12px rgba(0,0,0,.25);
+    }
+  }
+}
+
+/* ===== 图片卡片 ===== */
+body.enable-image {
+  .markdown-source-view.mod-cm6 .internal-embed.image-embed,
+  .markdown-source-view .CodeMirror .internal-embed.image-embed,
+  .markdown-preview-view .internal-embed.image-embed {
+    /* 尺寸设置 - 使用calc处理文本输入的高度值 */
+    display: block;
+    max-height: calc(var(--image-height, 400) * 1px);
+    overflow-y: auto;
+    margin: 1em 0;
+    padding: 10px;
+    
+    /* 颜色设置 */
+    border-left: 4px solid var(--image-border-color);
+    background: var(--image-bg-color);
+    
+    /* 视觉效果 */
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    transition: all 0.2s ease;
+    
+    /* 图片样式 */
+    img {
+      max-height: calc(var(--image-height, 400) * 1px - 20px);
+      display: block;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+    
+    /* 悬停效果 */
+    &:hover {
+      border-left-color: var(--image-hover-border-color);
+      box-shadow: 0 4px 12px rgba(0,0,0,.25);
+    }
+  }
+}
+
+/* ===== 移动端适配 ===== */
+@media (max-width: 768px) {
+  /* 常规内容 */
+  body.enable-regular {
+    .markdown-preview-view .internal-embed:not(.image-embed),
+    .markdown-source-view.mod-cm6 .internal-embed:not(.image-embed) {
+      max-height: calc(var(--regular-height, 240) * 1px * 0.6);
+    }
+  }
+  
+  /* 图片内容 */
+  body.enable-image {
+    .markdown-preview-view .internal-embed.image-embed,
+    .markdown-source-view.mod-cm6 .internal-embed.image-embed {
+      max-height: calc(var(--image-height, 400) * 1px * 0.6);
+      
+      img {
+        max-height: calc(var(--image-height, 400) * 1px * 0.6 - 20px);
+      }
+    }
+  }
+}
